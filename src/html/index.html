@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		 
+        <title> </title>
+  
+    <script type="text/javascript" src="../js/Ckoi.js"></script> 
+</head>
+<body style="margin:0px;width:100%">
+<div id="preload" style="overflow: hidden;width:100%;"></div>
+
+<div id="page-wrap" style="overflow: hidden;width:100%;height:100%;"></div>
+
+<div style="position:fixed;bottom:0px;left:0px;">
+<div id="e-navigatore" style="clear:both;overflow: hidden;" ></div>
+</div>
+ 		<script type="text/javascript">
+
+ 		    navigatore$({
+ 		        message: "ciao",
+ 		        action: function (r) {
+ 		              if (r == "1") {
+ 
+ 		                ajax$({ url: 'https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d57483.241222264456!2d-80.16862485000001!3d25.780385772698427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e6!4m3!3m2!1d25.759262099999997!2d-80.1332056!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+Florida%2C+Stati+Uniti!3m2!1d25.7890972!2d-80.2040435!5e0!3m2!1sit!2sit!4v1406403200797', iframe: false,
+ 		                    success: function (r) {
+ 		                        
+ 		                    }
+ 		                });
+ 		    
+				
+ 		              }
+					  if (r == "2") {
+ 
+ 		                ajax$({ url: 'http://www.youtube.com/embed/iAP9AF6DCu4', iframe: false,
+ 		                    success: function (r) {
+ 		                        
+ 		                    }
+ 		                });
+ 		    
+				
+ 		            }
+					if (r == "3") {
+ 
+ 		                ajax$({ url: 'http://msalvo.net/ivideo/', iframe: false,
+ 		                    success: function (r) {
+ 		                        
+ 		                    }
+ 		                });
+ 		    
+				
+ 		            }
+ 		       
+ 		         
+ 		            if (r == "4") {
+ 		                ajax$({ url: 'http://msalvo.net/tris/', iframe: false,
+ 		                    success: function (r) {
+ 		                        
+ 		                    }
+ 		                });
+ 		            }
+ 		          
+ 		         
+ 		        },
+ 		        button: [{ label: "Mappa", val: "1" }, { label: "The Calling", val: "2" }, { label: "ivideo", val: "3" }, { label: "tris", val: "4" }],
+ 		        option: { position: "relative", left: "0", top: "10", padding: "5px", textPadding: "25px", textColor: "#fff", buttonColor: "#FFFFFF" }
+ 		    })
+	
+	
+	  
+	
+	
+	</script>
+
+ 
+</body>
+</html>

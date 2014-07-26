@@ -240,7 +240,7 @@ action = Ckoi.prototype.utility.extend(action, action_)
 	init:function(action) {
  
 	if (!action.start) {
-	action.start = '<div style="position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:170;background:#EEEEEC url(\'./img/page-loader.gif\') no-repeat center center; text-align:center;"> </div>';
+	action.start = '<div style="position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:170;background:#EEEEEC url(\'../img/page-loader.gif\') no-repeat center center; text-align:center;"> </div>';
 	}
 
 	var ajx = this.httpReq(),
